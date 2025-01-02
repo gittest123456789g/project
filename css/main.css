@@ -279,7 +279,7 @@ width: 184px;
     display: none;
   }
   .img-more img {
-    max-width: 348px !important;
+    max-width: 351px !important;
   
   }
   .image-section img {
@@ -291,6 +291,7 @@ width: 184px;
   }
   .img-more{
     margin: auto;
+    display: flex;
   }
   .more-de{
     flex-direction: column;
