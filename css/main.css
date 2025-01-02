@@ -279,7 +279,7 @@ width: 184px;
     display: none;
   }
   .img-more img {
-    max-width: 351px !important;
+    max-width: 348px !important;
   
   }
   .image-section img {
@@ -291,7 +291,6 @@ width: 184px;
   }
   .img-more{
     margin: auto;
-    display: flex;
   }
   .more-de{
     flex-direction: column;
@@ -607,9 +606,9 @@ width: 184px;
   bottom: 20px;
   right: 20px;
   display: none;
-  background-image: -webkit-linear-gradient(0deg, rgb(94, 23, 223) 0%, rgb(29, 117, 250) 100%);
-  background-image: -ms-linear-gradient(0deg, rgb(94, 23, 223) 0%, rgb(29, 117, 250) 100%);
-  box-shadow: 2.5px 4.33px 15px 0px rgba(0, 0, 0, 0.15);
+    background-image: -webkit-linear-gradient(0deg, rgb(94, 23, 223) 0%, rgb(29, 117, 250) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(94, 23, 223) 0%, rgb(29, 117, 250) 100%);
+    box-shadow: 2.5px 4.33px 15px 0px rgba(0, 0, 0, 0.15);
   color: white;
   border: none;
   border-radius: 50%;
