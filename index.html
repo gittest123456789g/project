@@ -35,6 +35,7 @@
  
   
   <!-- ///home page/////// -->
+
   <section class="home">
     <div class="overlay"></div>
 <div class="container">
@@ -358,6 +359,8 @@
 
   <!-- ///////end footer/////// -->
   <!-- start under-footer////////////// -->
+  <button id="scrollUpBtn" title="Go to top">↑</button>
+
   <section class="under-footer">
     <div class="container">
       <div class="row">
@@ -509,6 +512,28 @@ gsap.from(".banner .head .des", {
 });
 
 
+
+</script>
+<script>
+  // Get the button
+const scrollUpBtn = document.getElementById("scrollUpBtn");
+
+// Show the button when scrolling down
+window.onscroll = function () {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollUpBtn.style.display = "block";
+    } else {
+        scrollUpBtn.style.display = "none";
+    }
+};
+
+// Scroll to the top when the button is clicked
+scrollUpBtn.onclick = function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+};
 
 </script>
   <!-- /////js///// -->

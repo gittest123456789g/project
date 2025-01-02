@@ -600,5 +600,32 @@ width: 184px;
   display: flex;
   align-items: center;
 }
+/* Scroll Up Button Styling */
+#scrollUpBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-image: -webkit-linear-gradient(0deg, rgb(94, 23, 223) 0%, rgb(29, 117, 250) 100%);
+  background-image: -ms-linear-gradient(0deg, rgb(94, 23, 223) 0%, rgb(29, 117, 250) 100%);
+  box-shadow: 2.5px 4.33px 15px 0px rgba(0, 0, 0, 0.15);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+#scrollUpBtn:hover {
+  background-color: #0056b3;
+}
+
+#scrollUpBtn:active {
+  transform: scale(0.95);
+}
 
 
