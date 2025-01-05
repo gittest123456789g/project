@@ -34,11 +34,51 @@ body {
   overflow: hidden;
 padding: 40px 0;
 }
+.Foma{
+  background-image: url(../image/services.jpg);
+  background-size: cover;
+  position: relative;
+  background-position: 100%;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+padding: 40px 0;
+}
+.Tank{
+  background-image: url(../image/2151748335.jpg);
+  background-size: cover;
+  position: relative;
+  background-position: 100%;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+padding: 40px 0;
+}
+.tanl-li{
+  line-height: 2;
+}
+.Tank .hero{
+  position: relative;
+  z-index: 2;
+}
+.Foma .hero{
+  position: relative;
+  z-index: 2;
+}
 .home .hero{
   position: relative;
   z-index: 2;
 }
 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 0; 
+}
+.overlay-d {
     position: absolute;
     top: 0;
     left: 0;
@@ -175,6 +215,12 @@ width: 184px;
   text-transform: uppercase;
   text-decoration: none;
 }
+.image-section{
+  background-image: url(../image/plumbingdoing-his-job.jpg);
+  background-size: cover;
+width: 100%;
+height: 100vh;
+}
 .btn-contactt a:hover{
   background-image: -webkit-linear-gradient(0deg, rgb(245, 105, 22) 0%, rgb(241, 171, 15) 100%);
   background-image: -ms-linear-gradient(0deg, rgb(245, 105, 22) 0%, rgb(241, 171, 15) 100%);
@@ -202,8 +248,11 @@ width: 184px;
   .ban-img img{
     display: none;
   }
-  .container-ui {
+  .box-ui {
     flex-direction: column;
+  }
+  .content-section{
+    padding: 1px !important;
   }
   .video-overlay {
     position: absolute;
@@ -224,6 +273,7 @@ width: 184px;
 .more-de{
   flex-direction: column;
 }
+
 .image-section img {
   
   margin-bottom: 46px;
@@ -232,6 +282,7 @@ width: 184px;
   border-radius: 20px !important;
   width: 193px !important;
   transform: rotate(270deg);
+  right: -119px !important;
 }
 
 .head h3 {
@@ -278,6 +329,14 @@ width: 184px;
   .ban-img img{
     display: none;
   }
+  .video-overlay img {
+    border-radius: 20px !important;
+    position: absolute;
+    width: 364px;
+    top: -429px;
+    right: -102px !important;
+    transform: rotate(270deg);
+}
   .img-more img {
     max-width: 348px !important;
   
@@ -295,7 +354,7 @@ width: 184px;
   .more-de{
     flex-direction: column;
   }
-  .container-ui {
+  .box-ui {
     flex-direction: column;
   }
   .image-section {
@@ -325,7 +384,7 @@ width: 184px;
   .more-de {
     flex-direction: column;
 }
-  .container-ui {
+  .box-ui {
     flex-direction: column;
   }
   .vvv{
@@ -374,7 +433,11 @@ width: 184px;
     width: 100% !important ;
     margin: 12px 0;
   }
+
+
 }
+
+
 .card-se{
   padding: 30px 0;
   background-color: #ffffff;
@@ -446,6 +509,14 @@ width: 184px;
     background-size: cover;
     padding: 90px 0;
 }
+.banner-tan{
+  background: url(../image/1505.jpg) no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 90px 0;
+}
 .des{
   line-height: 2;
   font-weight: bold;
@@ -479,35 +550,42 @@ width: 184px;
   text-decoration: underline;
   color: orangered !important;
 }
-.container-ui {
+.box-ui {
   display: flex;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   gap: 20px;
-
-  border-radius: 10px;
-  overflow: hidden;
-  padding: 20px;
-}
-
-.image-section {
-  flex: 1;
-  position: relative;
-}
-
-.image-section img {
-  width: 100%;
   border-radius: 20px;
-  transform: rotate(-90deg);
+  /*overflow: hidden;
+  */padding: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
 
+.image-section {
+  flex: 1;
+  position: relative;
+  padding-top: 2.8rem;
+  padding-bottom: 5rem;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  height: 542px;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+ object-fit: cover;
+ 
+}
+
 .video-overlay {
-  position: absolute;
-  top: 289px;
-  right: 149px;
+  position: relative;
+ 
   border-radius: 10px;
   display: flex
 ;
@@ -517,7 +595,10 @@ width: 184px;
 }
 .video-overlay img{
   border-radius: 20px !important;
+  position: absolute;
   width: 364px;
+  top: -429px;
+  right: -146px;
   transform: rotate(270deg);
 }
 .video-overlay::before {
@@ -604,11 +685,11 @@ width: 184px;
 #scrollUpBtn {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   display: none;
-    background-image: -webkit-linear-gradient(0deg, rgb(94, 23, 223) 0%, rgb(29, 117, 250) 100%);
-    background-image: -ms-linear-gradient(0deg, rgb(94, 23, 223) 0%, rgb(29, 117, 250) 100%);
-    box-shadow: 2.5px 4.33px 15px 0px rgba(0, 0, 0, 0.15);
+  background-image: -webkit-linear-gradient(0deg, rgb(94, 23, 223) 0%, rgb(29, 117, 250) 100%);
+  background-image: -ms-linear-gradient(0deg, rgb(94, 23, 223) 0%, rgb(29, 117, 250) 100%);
+  box-shadow: 2.5px 4.33px 15px 0px rgba(0, 0, 0, 0.15);
   color: white;
   border: none;
   border-radius: 50%;
@@ -618,6 +699,10 @@ width: 184px;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: opacity 0.3s, transform 0.3s;
+  -webkit-transition: opacity 0.3s, transform 0.3s;
+  -moz-transition: opacity 0.3s, transform 0.3s;
+  -ms-transition: opacity 0.3s, transform 0.3s;
+  -o-transition: opacity 0.3s, transform 0.3s;
 }
 
 #scrollUpBtn:hover {
@@ -628,4 +713,30 @@ width: 184px;
   transform: scale(0.95);
 }
 
+.cardd {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
 
+.cardd img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.cardd:hover img {
+  transform: scale(1.1);
+  filter: brightness(0.8);
+}
+.cardd:hover .overlay {
+  transform: translateY(0);
+}
+.list-tank li{
+  list-style: none;
+}
