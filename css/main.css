@@ -35,7 +35,7 @@ body {
 padding: 40px 0;
 }
 .Foma{
-  background-image: url(../image/services.jpg);
+  background-image: url(../image/646f7fea8fd9cc69640dd4e283b6087d-scaled.jpg);
   background-size: cover;
   position: relative;
   background-position: 100%;
@@ -45,7 +45,7 @@ padding: 40px 0;
 padding: 40px 0;
 }
 .Tank{
-  background-image: url(../image/2151748335.jpg);
+  background-image: url(../image/طريقة-عزل-الخزان-العلوي1.jpg);
   background-size: cover;
   position: relative;
   background-position: 100%;
@@ -185,7 +185,7 @@ nav {
   border-radius: 4px;
   padding: 10px ;
   display: inline-block;
-width: 184px;
+
 }
 .titleTwo {
   font-size: 16px;
@@ -244,15 +244,48 @@ height: 100vh;
 .vvv{
   margin-top: 3rem;
 }
+.fixed-button {
+  display: none !important;
+}
 @media (max-width:477px) {
   .ban-img img{
     display: none;
   }
+  .oo{
+    display: none;
+  }
+  .Foma {
+   
+    padding: 20px 0;
+}
+.Tank {
+  padding: 20px 0 !important;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-image: -webkit-linear-gradient(0deg, rgb(94 23 223 / 60%) 0%, rgb(29 117 250 / 60%) 100%);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.5s ease;
+  transform: translateY(0% ) !important;
+  -webkit-transform: translateY(0% ) !important;
+  -moz-transform: translateY(0% ) !important;
+  -ms-transform: translateY(0% ) !important;
+  -o-transform: translateY(0% ) !important;
+}
   .box-ui {
     flex-direction: column;
   }
   .content-section{
-    padding: 1px !important;
+    padding: 0 !important;
+  }
+  .imageee{
+    padding: 9px !important;
   }
   .video-overlay {
     position: absolute;
@@ -283,8 +316,22 @@ height: 100vh;
   width: 193px !important;
   transform: rotate(270deg);
   right: -119px !important;
+  display: none;
 }
-
+.why{
+  padding: 9px 0 !important;
+}
+.banner {
+  
+  padding: 25px 0 !important;
+}
+.more {
+  margin-top: 2rem !important;
+  padding: 20px 0 !important;
+}
+.imagee{
+  padding: 0 !important;
+}
 .head h3 {
   color: #010f2e;
   margin-top: 0px;
@@ -315,7 +362,7 @@ height: 100vh;
   }
   .home{
     /* height: 100vh !important; */
-    padding: 30px 0;
+    padding: 20px 0;
   }
   .line-h {
     line-height: 2.7;
@@ -324,6 +371,18 @@ height: 100vh;
 .vvv{
   margin-top: 1rem !important;
 }
+.fixed-button {
+  position: fixed;
+  top: 82%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  z-index: 1000; 
+
+  display: block !important;
+  }
+  #scrollUpBtn{
+    display: none !important;
+  }
 }
 @media (max-width:799px) {
   .ban-img img{
@@ -337,10 +396,10 @@ height: 100vh;
     right: -102px !important;
     transform: rotate(270deg);
 }
-  .img-more img {
-    max-width: 348px !important;
+  /* .img-more img {
+    max-width: 291px !important;
   
-  }
+  } */
   .image-section img {
     
     margin-bottom: 17%;
@@ -361,6 +420,7 @@ height: 100vh;
     flex: 1;
     position: relative;
     margin: auto;
+    height: 442px !important;
 }
   .cards{
     flex-direction: column;
@@ -454,8 +514,9 @@ height: 100vh;
   background-size: cover;
   background-position: center bottom;
   box-shadow: 0px 1px 59px 0px rgba(0, 0, 0, 0.11);
-  height: auto;
-  width: 23%;
+  height: 100%;
+  padding: 10px;
+  width: auto;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -510,7 +571,7 @@ height: 100vh;
     padding: 90px 0;
 }
 .banner-tan{
-  background: url(../image/1505.jpg) no-repeat;
+  background: url(../image/sss.jpg) no-repeat;
     background-size: contain;
     background-position: center bottom;
     background-attachment: fixed;
