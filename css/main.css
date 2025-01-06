@@ -301,6 +301,7 @@ height: 100vh;
 }
 .img-more img {
   max-width: 291px !important;
+ 
 
 }
 .more-de{
@@ -396,7 +397,10 @@ height: 100vh;
     right: -102px !important;
     transform: rotate(270deg);
 }
-  
+.img-more img{
+  display: block;
+  margin: auto;
+}
   .image-section img {
     
     margin-bottom: 17%;
@@ -434,6 +438,10 @@ height: 100vh;
   .image-section img {
     
     margin-bottom: 17%;
+}
+.img-more img{
+  display: block;
+  margin: auto;
 }
   .img-more{
     margin: auto;
